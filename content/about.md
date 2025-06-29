@@ -1,9 +1,11 @@
 ---
 title: "About VAST"
 description: "Learn about VAST's mission to improve anesthesia safety worldwide through simulation-based training."
+featured_image: "/images/simulation.jpg" # Optional: add a hero image
+omit_header_text: false
+date: 2025-01-01
+type: page
 ---
-
-# About Us
 
 VAST brings the benefits of simulation training to a wide range of contexts. The Course is designed to be portable, locally adaptable and affordable. It reinforces essential clinical practices and focuses on non-technical skills relevant for anaesthesia providers and perioperative teams. Through partnership and capacity building of a local facilitator network, VAST promotes the ability for enduring and sustainable delivery of simulation-based education.
 

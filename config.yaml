@@ -1,7 +1,10 @@
 baseURL: "https://vast-site.danguns.ca"
 title: "VAST"
 languageCode: "en-us"
-theme: "universal"
+
+module:
+  imports:
+    - path: github.com/theNewDynamic/gohugo-theme-ananke/v2
 
 # Content and language settings
 contentDir: "content"
@@ -32,87 +35,71 @@ menu:
       url: "/contact/"
       weight: 4
 
-# Site parameters for Universal theme
+# Ananke theme parameters
 params:
-  style: "blue"  # Color scheme: default, blue, green, marsala, pink, red, turquoise, violet
+  # Basic site info
+  description: "VAST brings the benefits of simulation training to a wide range of contexts through portable, locally adaptable and affordable courses."
   
-  # Logo settings
-  logo: "img/logo.svg"
-  logo_small: "img/logo-small.svg"
-  disabled_logo: false
-  logo_text: "VAST"
+  # Logo and branding
+  site_logo: "images/logo.svg"
+  
+  # Colors and styling
+  background_color_class: "bg-near-white"
+  body_classes: "avenir bg-near-white"
+  text_color: "dark-gray"
+  
+  # Featured image settings
+  featured_image: "/images/simulation.jpg"  # Add your hero image here
+  featured_image_class: "cover bg-center"
+  cover_dimming_class: "bg-black-40"
   
   # Contact information
   email: "info@vast.org"
   
+  # Social media (add your social links)
+  # github: "https://github.com/yourusername"
+  # twitter: "https://twitter.com/yourusername"
+  # linkedin: "https://linkedin.com/company/vast"
+  
   # Copyright
-  copyright: "Copyright &copy; 2025 VAST Foundation. All Rights Reserved."
+  copyright: "Copyright © 2025 VAST Foundation. All Rights Reserved."
   
   # Date format
   date_format: "January 2, 2006"
   
+  # Show reading time and word count
+  show_reading_time: true
+  
   # Main sections (for blog functionality)
   mainSections: ["blog"]
   
-  # Homepage sections
-  about_us: "<p>VAST brings the benefits of simulation training to a wide range of contexts. The Course is designed to be portable, locally adaptable and affordable.</p>"
-  
-  # Contact form (using Formspree - you'll need to set this up)
-  # formspree_action: "https://formspree.io/f/your-form-id"
-  contact_form_ajax: false
-  
-  # Footer settings
-  footer:
-    recent_posts:
-      enable: true
-  
-  # Recent posts settings
+  # Homepage content
   recent_posts:
     enable: true
     title: "Latest Updates"
-    subtitle: "Stay informed about our latest training programs and developments"
-    hide_summary: false
   
-  # Features section
-  features:
-    enable: true
-    cols: 3
-  
-  # Testimonials (displaying team members)
-  testimonials:
-    enable: true
-    title: "VAST Ltd Board"
-    subtitle: "Meet the dedicated professionals leading our mission to improve anesthesia safety worldwide"
-  
-  # Clients/Partners section
-  clients:
-    enable: true
-    title: "Our Partners"
-    subtitle: "We work with leading healthcare organizations worldwide"
-  
-  # Carousel settings
-  CarouselHomepage:
-    enable: true
-    auto_play: true
-    slide_speed: 2000
-    pagination_speed: 1000
-  
-  # Carousel settings for testimonials
-  CarouselTestimonials:
-    items: 3
-    auto_play: false
-    slide_speed: 2000
-    pagination_speed: 1000
-  
-  # Carousel settings for clients
-  CarouselCustomers:
-    items: 6
-    auto_play: false
-    slide_speed: 2000
-    pagination_speed: 1000
+  # Contact form (using Formspree)
+  # Uncomment and add your Formspree endpoint when ready
+  # formspree_action: "https://formspree.io/f/your-form-id"
 
 # Taxonomies
 taxonomies:
   tag: tags
   category: categories
   author: authors
+
+# Privacy settings (optional)
+privacy:
+  disqus:
+    disable: true
+  googleAnalytics:
+    disable: false
+    anonymizeIP: true
+  instagram:
+    disable: true
+  twitter:
+    disable: false
+  vimeo:
+    disable: true
+  youtube:
+    disable: false
